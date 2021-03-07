@@ -1,23 +1,33 @@
 # Project 2 - Ames Housing Data and Kaggle Challenge
 
-Welcome to Project 2! It's time to start modeling.
 
-**Primary Learning Objectives:**
-1. Creating and iteratively refining a regression model
-2. Using [Kaggle](https://www.kaggle.com/) to practice the modeling process
-3. Providing business insights through reporting and presentation.
+## Problem Statement
+Presently, one of my relatives is gaining interested in a real estate trading business. What she's currently doing is searching for second-hand houses/condominiums that worth renovating for resale. One of the problems she has is the valuation of the property since it is very subjective, and there are plenty of factors affecting its price.
+Therefore, **this project aims to study significant factors affecting the property value (which add the most value to a property and which hurt the price most?) and finally build a model that accurately predicts the property price in a timely manner. So we do not miss an opportunity to get undervalued properties and maximize our profit!**
 
-You are tasked with creating a regression model based on the Ames Housing Dataset. This model will predict the price of a house at sale.
+**List of model used in the project:**  
+1. Multiple Linear Regression
+1. Regularized Linear Regression in multiple variance
+ - Ridge Regression
+ - Lasso Regression
+ - ElasticNet Regression
 
-The Ames Housing Dataset is an exceptionally detailed and robust dataset with over 70 columns of different features relating to houses.
+**Evaluation metrics:**  
+For this occasion, **RMSE** (Square root of Mean Squared Error) will be used as an evaluation metrics
 
-Secondly, we are hosting a competition on Kaggle to give you the opportunity to practice the following skills:
+**Baseline performance:**  
+The performance of our model will be compared against the baseline model that make an average of property price as a prediction in every time.
 
-- Refining models over time
-- Use of train-test split, cross-validation, and data with unknown values for the target to simulate the modeling process
-- The use of Kaggle as a place to practice data science
+## About the dataset
+The <a href = http://www.amstat.org/publications/jse/v19n3/decock.pdf > Ames Housing dataset </a>  was compiled by Dean De Cock for use in data science education. It's an incredible alternative for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset.
 
-As always, you will be submitting a technical report and a presentation. **You may find that the best model for Kaggle is not the best model to address your data science problem.**
+The dataset contains 2051 observation of 80 features, describing specific characteristics of residential property in Ames, Iowa sold between 2006 - 2010.  Of the 80 features, it can be separated into 4 main categories as follow
+- Features of the house --> a string describing main features such as roof material, mansory type, electrical system  
+- Area-Size related --> 1st floor and 2nd floor area, lot area, pool area, garage area  
+- Location of the house, neighborhood...
+- Surrounding Environmental Factor --> alley, landslope
+
+<a href = https://github.com/Joeycooky/DSI_Project_2/blob/main/data_dict.md > See full data dictionary here </a>
 
 ## Set-up
 
