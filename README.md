@@ -30,6 +30,9 @@ The dataset contains 2051 observation of 80 features, describing specific charac
 <a href = https://github.com/Joeycooky/DSI_Project_2/blob/main/data_dict.md > See full data dictionary here </a>
 
 ## Executive Summary
+
+![Overall](https://github.com/Joeycooky/DSI_Project_2/blob/main/images/coef_overall.png)
+
 Among all models in our study, an ElasticNet regressor with polynomial has the best predictive performance (evaluated by RMSE). However, considering interpretability, the simpler version without polynomial transformation is much easier to interpret and be understood by non-technical user.
 Although numerous factors impacted the property value, some of the factors worth mentioning are ...
 - Although price tend to increase with the total area of the house, living area is the most expensive part of it.
@@ -38,5 +41,5 @@ Although numerous factors impacted the property value, some of the factors worth
 - If there is no garage, don't waste your time building one. It won't add much value to the house.
 
 for detailed analysis please go to ...
-1. <a href = https://github.com/Joeycooky/DSI_Project_2/blob/main/Code/EDA.ipynb > Exploratory Data Analysis </a> 
+1. <a href = https://github.com/Joeycooky/DSI_Project_2/blob/main/Code/EDA.ipynb > Exploratory Data Analysis </a>
 1. <a href = https://github.com/Joeycooky/DSI_Project_2/blob/main/Code/model_polyorder2.ipynb > Model, Prediction and Conclusion </a>
